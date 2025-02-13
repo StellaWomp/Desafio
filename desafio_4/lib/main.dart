@@ -1,10 +1,28 @@
 import 'package:flutter/material.dart';
+import 'dart:math';
+
 
 void main() {
   runApp(MeuApp());
 }
 
-class MeuApp extends StatelessWidget {
+class MeuApp extends StatefulWidget {
+  @override
+  _MeuAppState createState() => _MeuAppState();
+}
+
+class _MeuAppState extends State<MeuApp> {
+  //Onde criamos asvariáveis
+
+  void alterarFacesDosDados (){
+    setState(() {
+      // Ação ao pressionar o botão
+      //numeroDadoEsquerdo = Random().nextInt(6) + 1;
+      //numeroDadoDireito = Random().nextInt(6) + 1;
+     // print('Número do dado = $numeroDadoEsquerdo');
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -56,7 +74,7 @@ class MeuApp extends StatelessWidget {
                               color: Colors.black,
                               child: Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                MainAxisAlignment.spaceEvenly,
                                 children: [
                                   //Os quadrados de cada linha
                                   //Primeiro
@@ -68,9 +86,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       'C',
                                       style: TextStyle(
-                                          fontSize: 40,
-                                          color: Colors.blue[900],
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 40,
+                                        color: Colors.blue[900],
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -83,9 +101,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       'DEL',
                                       style: TextStyle(
-                                          fontSize: 40,
-                                          color: Colors.blue[900],
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 40,
+                                        color: Colors.blue[900],
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -98,9 +116,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       '%',
                                       style: TextStyle(
-                                          fontSize: 40,
-                                          color: Colors.blue[900],
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 40,
+                                        color: Colors.blue[900],
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -113,9 +131,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       '/',
                                       style: TextStyle(
-                                          fontSize: 40,
-                                          color: Colors.blue[900],
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 40,
+                                        color: Colors.blue[900],
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -142,7 +160,7 @@ class MeuApp extends StatelessWidget {
                               color: Colors.black,
                               child: Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                MainAxisAlignment.spaceEvenly,
                                 children: [
                                   //Os quadrados de cada linha
                                   //Primeiro
@@ -193,9 +211,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       '*',
                                       style: TextStyle(
-                                          fontSize: 40,
-                                          color: Colors.blue[900],
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 40,
+                                        color: Colors.blue[900],
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -222,7 +240,7 @@ class MeuApp extends StatelessWidget {
                               color: Colors.black,
                               child: Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                MainAxisAlignment.spaceEvenly,
                                 children: [
                                   //Os quadrados de cada linha
                                   //Primeiro
@@ -273,9 +291,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       '+',
                                       style: TextStyle(
-                                          fontSize: 40,
-                                          color: Colors.blue[900],
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 40,
+                                        color: Colors.blue[900],
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -302,7 +320,7 @@ class MeuApp extends StatelessWidget {
                               color: Colors.black,
                               child: Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                MainAxisAlignment.spaceEvenly,
                                 children: [
                                   //Os quadrados de cada linha
                                   //Primeiro
@@ -353,9 +371,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       '-',
                                       style: TextStyle(
-                                          fontSize: 50,
-                                          color: Colors.blue[900],
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 50,
+                                        color: Colors.blue[900],
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -382,7 +400,7 @@ class MeuApp extends StatelessWidget {
                               color: Colors.black,
                               child: Row(
                                 mainAxisAlignment:
-                                    MainAxisAlignment.spaceEvenly,
+                                MainAxisAlignment.spaceEvenly,
                                 children: [
                                   //Os quadrados de cada linha
                                   //Primeiro
@@ -394,9 +412,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       '.',
                                       style: TextStyle(
-                                          fontSize: 60,
-                                          color: Colors.white,
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 60,
+                                        color: Colors.white,
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -422,9 +440,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       '√',
                                       style: TextStyle(
-                                          fontSize: 40,
-                                          color: Colors.blue[900],
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 40,
+                                        color: Colors.blue[900],
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
@@ -437,9 +455,9 @@ class MeuApp extends StatelessWidget {
                                     child: Text(
                                       '=',
                                       style: TextStyle(
-                                          fontSize: 50,
-                                          color: Colors.blue[900],
-                                          fontWeight: FontWeight.bold,),
+                                        fontSize: 50,
+                                        color: Colors.blue[900],
+                                        fontWeight: FontWeight.bold,),
                                       textAlign: TextAlign.center,
                                     ),
                                   ),
